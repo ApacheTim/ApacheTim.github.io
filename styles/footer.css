@@ -1,28 +1,31 @@
-// Запускаємо функції після завантаження сторінки
-document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.getElementById("burger");
-  const menu = document.getElementById("navLinks");
-  const navLinks = document.querySelectorAll(".nav-links a");
+body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji'; }
 
-  // Перемикання меню на мобільних пристроях
-  burger?.addEventListener("click", () => {
-    menu?.classList.toggle("active");
-  });
+:root{
+  --primary: #1D4ED8;
+  --primary-hover: #1E40AF;
+  --accent: #F43F5E;
+  --success: #16A34A;
+  --text: #0F172A;
+  --bg: #FFFFFF;
+  --bg-alt: #F8FAFC;
+  --border: #E5E7EB;
+  --link: #1D4ED8;
+}
 
-  // Закриття меню після кліку по посиланню
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      menu?.classList.remove("active");
-    });
-  });
 
-  // Додавання тіні до навбару при скролі
-  const navbar = document.querySelector(".navbar");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-      navbar?.classList.add("scrolled");
-    } else {
-      navbar?.classList.remove("scrolled");
-    }
-  });
-});
+.footer {
+  background-color: #0F172A;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border-top: 4px solid #7b61ff;
+}
+.footer a {
+  color: var(--link);
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}

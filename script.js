@@ -1,4 +1,4 @@
- // Запускаємо функції після завантаження сторінки
+// Запускаємо функції після завантаження сторінки
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.getElementById("burger");
   const menu = document.getElementById("navLinks");

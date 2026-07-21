@@ -1,74 +1,99 @@
-:root{
-  --primary: #1D4ED8;
-  --primary-hover: #1E40AF;
-  --accent: #F43F5E;
-  --success: #16A34A;
-  --text: #0F172A;
-  --bg: #FFFFFF;
-  --bg-alt: #F8FAFC;
-  --border: #E5E7EB;
-  --link: #1D4ED8;
-}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <!-- 🌐 МЕТА та ПІДКЛЮЧЕННЯ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Substitution Page</title>
 
+  <!-- 🎨 Стилі -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/substitution.css">
+  <link rel="icon" type="image/png" href="images/index_logo/logo.png">
 
-body {
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji';
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-  color: #333;
-}
-h1, h2 {
-  text-align: center;
-}
-.page-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  background-color: #fff;
-  border-radius: 12px;
-}
-.intro-text {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-}
-body {
-  overflow-x: hidden;
-}
-.navbar-container,
-.nav-links,
-.container,
-.form-analytics-wrapper {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-@media (max-width: 850px) {
-  .form-analytics-wrapper {
-    flex-direction: column;
-  }
-  .analytics-text, .form, .container {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .form-analytics-wrapper {
-    flex-direction: column;
-    padding: 20px 10px;
-    gap: 20px;
-  }
-  .container {
-    width: 100%;
-    padding: 16px;
-  }
-  input, textarea, select {
-    font-size: 1rem;
-    padding: 10px;
-    margin-bottom: 16px;
-  }
-  #callButton {
-    font-size: 1rem;
-    padding: 12px;
-    width: 100%;
-  }
-}
+  <!-- ⚙️ Скрипти -->
+  <script src="script.js" defer></script>
+
+<body>
+  <!-- 🔝 НАВІГАЦІЯ -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="burger" id="burger">&#9776;</div>
+        <a href="index.html" class="logo">Main Company Page</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="substitution.html">Підміна</a></li>
+        </ul>
+        <a href="tel:+380000000000" class="phone-icon" id="phoneIcon">&#9743;</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="phone-links-grid">
+
+    <div class="phone-card">
+      <a href="tel:+380970000000" class="link-default">
+        <img src="images/operator_logo/kyivstar.svg" alt="Київстар" class="operator-logo">
+        +380970000000
+      </a><br>
+      <a href="tel:+380500000000" class="link-default">
+        <img src="images/operator_logo/vodafone.svg" alt="Vodafone" class="operator-logo">
+        +380500000000
+      </a><br>
+      <a href="tel:+380630000000" class="link-default">
+        <img src="images/operator_logo/lifecell.png" alt="Lifecell" class="operator-logo">
+        +380630000000
+      </a>
+    </div>
+
+    <div class="phone-card">
+      <a href="tel:+380970000000" class="button-fancy">Call Us</a>
+    </div>
+
+    <div class="phone-card">
+      <p>Маєш питання? <a href="tel:+380970000000" class="link-inline">дзвони сюди</a> — допоможемо!</p>
+    </div>
+
+    <div class="phone-card">
+      <a href="tel:+380970000000" class="btn-cta">📲 Зателефонувати зараз</a>
+    </div>
+
+    <div class="phone-card">
+      <a href="tel:+380970000000" class="button-bordered">+38 (097) 000-00-00</a>
+    </div>
+
+    <div class="phone-card">
+      <div class="banner-link">
+        <a href="tel:+380970000000">📞 Контактний номер: +380970000000</a>
+      </div>
+    </div>
+
+    <div class="phone-card">
+      <a href="tel:+380970000000" class="link-muted">+380970000000</a>
+    </div>
+
+    <div class="phone-card">
+      <p>Залишились запитання?</p>
+      <a href="tel:+380970000000" class="btn-dark">📞 +380970000000</a>
+    </div>
+
+    <!-- 🔥 Ось цей блок замінено на iframe -->
+    <div class="phone-card">
+      <iframe src="call-frame.html" width="300" height="100" style="border: none;"></iframe>
+    </div>
+
+    <div class="phone-card">
+      <a href="tel:+380970000000" class="link-hover">Подзвонити +380970000000</a>
+    </div>
+
+  </div>
+
+  <!-- 🔚 ФУТЕР -->
+  <footer class="footer" id="contact">
+    <p>Зв’яжіться з нами: <a href="tel:+380970000000">+380970000000</a></p>
+  </footer>
+</body>
+</html>
