@@ -2,19 +2,17 @@
 <html lang="uk">
 <head>
   <!-- Google Tag Manager -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0JY12TXXZ5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0JY12TXXZ5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-0JY12TXXZ5');
-</script>
-
-
+    gtag('config', 'G-0JY12TXXZ5');
+  </script>
   <!-- End Google Tag Manager -->
 
- <script type="text/javascript">
+  <script type="text/javascript">
     (function (d,s,u,e,p) {
       p=d.getElementsByTagName(s)[0],e=d.createElement(s),
       e.async=1,e.src=u,p.parentNode.insertBefore(e,p);
@@ -60,8 +58,6 @@
 </head>
 
 <body>
-  <!-- 🛑 Noscript Google Tag Manager -->
-
   <!-- 🔝 НАВІГАЦІЯ -->
   <header class="header">
     <nav class="navbar">
@@ -82,6 +78,11 @@
     <p class="intro-text">
       Телефонія — це технологія, що дозволяє передавати голосову інформацію через відстань за допомогою телефонних мереж, включаючи VoIP (IP-телефонія).
     </p>
+
+    <!-- 📞 КНОПКА ВИКЛИКУ CALLBACK -->
+    <div style="text-align: center; margin: 30px 0;">
+      <button type="button" class="fancy-button" onclick="ringostatAPI.openCallbackForm()">☎ Замовити зворотний дзвінок</button>
+    </div>
 
     <!-- 📊 Аналітика + Форма -->
     <div class="form-analytics-wrapper">
@@ -124,7 +125,8 @@
 
   <!-- 🔚 ФУТЕР -->
   <footer class="footer" id="contact">
-    <p>Зв’яжіться з нами: <a href="tel:+380440000000">+380440000000</a></p>
+    <!-- Додано клас ringostat-phone для коректної підміни номера у футері -->
+    <p>Зв’яжіться з нами: <a href="tel:+380440000000" class="ringostat-phone">+380440000000</a></p>
   </footer>
 </body>
 </html>
