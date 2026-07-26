@@ -104,3 +104,13 @@ body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
     width: 100%;
   }
 }
+#phoneIcon {
+  font-size: 0 !important; /* Робить підмінні цифри абсолютно невидимими */
+  text-decoration: none;
+}
+
+#phoneIcon::before {
+  content: "\260E"; /* CSS-код іконки телефону (☎) */
+  font-size: 24px;  /* Повертаємо розмір тільки для нашої іконки */
+  color: #333;      /* Задайте колір, який підходить під ваш дизайн */
+}
